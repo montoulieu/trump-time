@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Playfair+Display');
+body {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+.main {
+  font-family: 'Noto Sans', Helevtica, Arial, sans-serif;
+
+}
+.magazine-cover {
+  background-color: black;
+  border: 15px solid red;
+  width: 500px;
+  height: 670px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.time-header {
+
+  position: absolute;
+  background-image: url('images/time-logo.png');
+  top: 35px;
+  left: 50px;
+  right: 50px;
+  height: 150px;
+  margin: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 200;
+
+}
+
+.time-cover-image {
+  background-color: black;
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  background-image: url('http://i.onionstatic.com/avclub/6364/23/16x9/960.jpg');
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
