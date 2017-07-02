@@ -1,41 +1,79 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Playfair+Display');
 body {
   font-family: 'Playfair Display', 'Times New Roman', serif;
 }
 .main {
-  font-family: 'Noto Sans', Helevtica, Arial, sans-serif;
-
+  font-family: 'Roboto', Helevtica, Arial, sans-serif;
 }
+.russian-red {
+  background-color: #e90606!important;
+}
+.golden-shower{
+  color: #d5ac4b;
+}
+
 .magazine-cover {
   background-color: black;
-  border: 15px solid red;
+  border: 10px solid #e90606;
   width: 500px;
   height: 670px;
   position: relative;
   margin: 0 auto;
+  transition: all .25s ease-in-out;
 }
 
 .time-header {
-
   position: absolute;
   background-image: url('images/time-logo.png');
-  top: 35px;
-  left: 50px;
-  right: 50px;
+  top: 35px; left: 50px; right: 50px;
   height: 150px;
   margin: auto;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 200;
-
+  transition: all .25s ease-in-out;
 }
-
+.time-text {
+  position: absolute;
+  z-index: 150;
+  text-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+  .top-headline {
+    left: 0; right: 0; top: 5px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .left-large-headline {
+    left: 15px; bottom: 110px;
+    width: 50%;
+    font-weight: 700;
+  }
+  .left-medium-headline {
+    left: 20px;
+    bottom: 40px;
+    width: 50%;
+  }
 .time-cover-image {
   background-color: black;
   position: absolute;
   top: 0; right: 0; left: 0; bottom: 0;
-  background-image: url('http://i.onionstatic.com/avclub/6364/23/16x9/960.jpg');
+  background-image: url('http://assets.nydailynews.com/polopoly_fs/1.2731579.1469831692!/img/httpImage/image.jpg_gen/derivatives/article_750/583802826.jpg');
   z-index: 0;
   background-size: cover;
   background-position: center;
+  transition: all .25s ease-in-out;
+}
+
+@media (max-width: 540px){
+  .magazine-cover {
+    width: 320px;
+    height: 420px;
+    border-width: 10px;
+  }
+  .time-header {
+    top: 15px;
+    left: 30px;
+    right: 30px;
+  }
 }
