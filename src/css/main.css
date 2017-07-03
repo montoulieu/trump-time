@@ -26,7 +26,7 @@ body {
 
 .time-header {
   position: absolute;
-  background-image: url('images/time-logo.png');
+  background-image: url('../../images/time-logo.png');
   top: 35px; left: 50px; right: 50px;
   height: 150px;
   margin: auto;
@@ -81,7 +81,9 @@ body {
   background-position: center;
   transition: all .25s ease-in-out;
 }
-
+.custom-file {
+  width: 100%;
+}
 @media (max-width: 540px){
 
   .magazine-cover {

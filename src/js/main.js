@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
   $('#cover-image').on('change', function(ev) {
@@ -12,8 +10,8 @@ $(document).ready(function(){
   });
 
   $('body').keypress(function (e) {
-   var key = e.which;
-   if( key == 13 ){
+    var key = e.which;
+    if( key == 13 ){
       Generate();
     }
   });
@@ -30,7 +28,6 @@ $(document).ready(function(){
     e.preventDefault();
     Random();
   });
-
 
 });
 
@@ -49,6 +46,7 @@ function Generate(){
 function Save(){
 
 }
+
 // Selects random magazine covers
 function Random(){
   coverSelection = getRandomIntInclusive(0,trumpCovers.length - 1);
@@ -68,10 +66,6 @@ function getRandomIntInclusive(min, max) {
 }
 
 var trumpCovers = [
-  // ['prick','http://i.onionstatic.com/avclub/6364/23/16x9/960.jpg'],
-  // ['creep','https://s-media-cache-ak0.pinimg.com/originals/a9/95/99/a995991386bc33ad3e12569753671553.jpg'],
-  // ['wrestling','http://image.al.com/home/bama-media/width620/img/opinion/photo/21532329-mmmain.jpg'],
-  //
   [
     'weener',
     'http://pixelglitch.net/wp-content/uploads/2017/07/trump-hotdog.jpg',
@@ -107,5 +101,21 @@ var trumpCovers = [
       ['right-2'    , 'большие руки' ],
       ['right-3'    , 'большие руки' ],
     ]
-  ]
+  ],
+  [
+    'new-cover',
+    'http://pixelglitch.net/wp-content/uploads/2017/07/trump-russia.jpg',
+    [
+      ['top'        , 'Товарищ козырь - лучший'],
+      ['left-large' , 'большие руки' ],
+      ['left-medium', 'Но еще больший пенис' ],
+      ['right-1'    , 'Впитывание в мочу легко, когда вы являетесь этим богатым' ],
+      ['right-2'    , 'большие руки' ],
+      ['right-3'    , 'большие руки' ],
+    ]
+  ],
+  // ['prick','http://i.onionstatic.com/avclub/6364/23/16x9/960.jpg'],
+  // ['creep','https://s-media-cache-ak0.pinimg.com/originals/a9/95/99/a995991386bc33ad3e12569753671553.jpg'],
+  // ['wrestling','http://image.al.com/home/bama-media/width620/img/opinion/photo/21532329-mmmain.jpg'],
+  //
 ];
