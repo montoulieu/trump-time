@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Playfair+Display');
-body {
+header {
   font-family: 'Playfair Display', 'Times New Roman', serif;
 }
-.main {
+body {
   font-family: 'Roboto', Helevtica, Arial, sans-serif;
 }
-.russian-red {
-  background-color: #e90606!important;
+.bg-russian-red {
+  background-color: #e90606;
 }
-.golden-shower{
+.text-golden-shower{
   color: #d5ac4b;
 }
-
+.text-russian-red{
+  color: #e90606;
+}
 .magazine-cover {
   background-color: black;
   border: 10px solid #e90606;
@@ -38,21 +40,36 @@ body {
   z-index: 150;
   text-shadow: 0px 0px 10px rgba(0,0,0,.5);
 }
-  .top-headline {
-    left: 0; right: 0; top: 5px;
+  .top {
+    left: 0; right: 0; top: 1%;
     width: 100%;
     margin: auto;
     text-align: center;
   }
-  .left-large-headline {
-    left: 15px; bottom: 110px;
+  .left-large {
+    left: 15px; top: 60%;
     width: 50%;
     font-weight: 700;
   }
-  .left-medium-headline {
+  .left-medium {
     left: 20px;
-    bottom: 40px;
+    top: 80%;
     width: 50%;
+  }
+  .right-1,
+  .right-2,
+  .right-3 {
+    right: 15px;
+    top: 38%;
+    width: 35%;
+    text-align: right;
+    font-weight: 700;
+  }
+  .right-2 {
+    top: 55%;
+  }
+  .right-3 {
+    top: 70%;
   }
 .time-cover-image {
   background-color: black;
@@ -66,14 +83,24 @@ body {
 }
 
 @media (max-width: 540px){
+
   .magazine-cover {
     width: 320px;
     height: 420px;
-    border-width: 10px;
+    border-width: 5px;
   }
+    .top.time-text { font-size: .7rem; }
+    h1.time-text   { font-size: 2rem; }
+    h3.time-text   { font-size: 1rem; }
+    h5.time-text   { font-size: .8rem;}
+
   .time-header {
-    top: 15px;
+    top: 20px;
     left: 30px;
     right: 30px;
+  }
+  .btn {
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 }
