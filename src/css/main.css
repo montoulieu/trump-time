@@ -15,7 +15,6 @@ body {
   color: #e90606;
 }
 .magazine-cover {
-  background-color: black;
   border: 10px solid #e90606;
   width: 500px;
   height: 670px;
@@ -82,6 +81,10 @@ body {
   transition: all .25s ease-in-out;
 }
 .custom-file {
+  width: 100%;
+}
+
+.modal canvas {
   width: 100%;
 }
 @media (max-width: 540px){

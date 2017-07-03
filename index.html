@@ -75,9 +75,26 @@
             <input type="text" class="form-control" id="right-3" value="Global Warming: A New Age of Extinction">
           </div>
           <button type="submit" class="btn btn-danger btn-generate">Generate</button>
-          <button type="submit" class="btn btn-green btn-save">Save</button>
+          <button type="submit" class="btn btn-green btn-save" data-toggle="modal" data-target="#saveModal">Save</button>
           <button type="submit" class="btn btn-warning btn-random float-right">Random</button>
         </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="saveModalTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content bg-inverse">
+              <div class="modal-header">
+                <h5 class="modal-title" id="saveModalTitle">Your Trump Image</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -87,16 +104,8 @@
         <div class="row">
           <div class="col-12">
             <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="text-white" href="https://github.com/pi-mont/trump-time" target="_blank">
-                  <i class="fa fa-github fa-2x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="text-white" href="https://twitter.com/share?url=http://trump-time.us&amp;text=@TrumpTimeMag Generator. For those who like a little covfefe with their fake news &amp;hashtags=TrumpTime, FakeNews, Resist" target="_blank">
-                  <i class="fa fa-twitter fa-2x"></i>
-                </a>
-              </li>
+              <li class="list-inline-item"><a class="text-white" href=""><i class="fa fa-github fa-2x"></i></a></li>
+              <li class="list-inline-item"><a class="text-white" href=""><i class="fa fa-twitter fa-2x"></i></a></li>
             </ul>
             <h6 class="pt-5">V 1.0</h6>
             <h6 class=""><a href="http://pixelglitch.net" class="text-white">Pixel Glitch</a></h6>

@@ -44,7 +44,16 @@ function Generate(){
 
 // Creates magazine image and pops results in modal window
 function Save(){
-
+  Generate();
+  html2canvas($('.magazine-cover'), {
+    allowTaint: true,
+    onrendered: function(canvas) {
+      // document.body.appendChild(canvas);
+      $('.modal-body canvas').remove();
+      $('.modal-body').append(canvas);
+      $('#myModal').modal('show')
+    }
+  });
 }
 
 // Selects random magazine covers
