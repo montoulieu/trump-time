@@ -112,15 +112,15 @@ var trumpCovers = [
     ]
   ],
   [
-    'new-cover',
-    'http://pixelglitch.net/wp-content/uploads/2017/07/trump-russia.jpg',
+    'graffiti',
+    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpGraffiti.jpg',
     [
-      ['top'        , 'Товарищ козырь - лучший'],
-      ['left-large' , 'большие руки' ],
-      ['left-medium', 'Но еще больший пенис' ],
-      ['right-1'    , 'Впитывание в мочу легко, когда вы являетесь этим богатым' ],
-      ['right-2'    , 'большие руки' ],
-      ['right-3'    , 'большие руки' ],
+      ['top'        , 'The Foreign Lover You Heard About But Ignored...'],
+      ['left-large' , 'In Bed Together?' ],
+      ['left-medium', 'Make America Scandalous Again' ],
+      ['right-1'    , 'An Exclusive Look at The New Couples Bedroom Banter' ],
+      ['right-2'    , 'How will Melania React?' ],
+      ['right-3'    , 'How Trump\'s Secret Love Relationship Could Creep Into the White House' ],
     ]
   ],
   // ['prick','http://i.onionstatic.com/avclub/6364/23/16x9/960.jpg'],
