@@ -35,7 +35,7 @@ $(document).ready(function(){
     $('.time-cover-image').removeClass('darkened');
   });
   $(".search-clear").click(function(){
-    console.log('CLearing');
+    console.log('Clearing');
     $(this).prev().val('');
     $(this).prev().attr('value','');
   });
@@ -83,7 +83,7 @@ function Random(){
   $('input.form-control').each(function(index){
     id   = $(this).attr('id');
     text = $('.time-text.' + id).text();
-    $(this).text(text);
+    $(this).val(text);
     $(this).attr('value',text);
   });
 
