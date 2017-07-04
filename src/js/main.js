@@ -146,7 +146,7 @@ var trumpCovers = [
   ],
   [
     'trump-dump',
-    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpDump.jpg',
+    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpDump-1.jpg',
     [
       ['top'        , 'The Smell That Made It\'s Way To Your Doorstep...' ],
       ['left-large' , 'Trump\'s Turtle Head' ],
@@ -158,7 +158,7 @@ var trumpCovers = [
   ],
   [
     'trump-chin',
-    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpChin.jpg',
+    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpChin-1.jpg',
     [
       ['top'        , 'The Most Influential Man In The History of Mankind' ],
       ['left-large' , 'Believe Me' ],
