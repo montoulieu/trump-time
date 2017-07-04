@@ -106,7 +106,9 @@ body {
       cursor: pointer;
       color: white;
   }
-.modal img {
+.modal img,
+.modal canvas
+ {
   width: 100%!important;
   height: auto!important;
 }

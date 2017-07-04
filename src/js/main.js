@@ -1,13 +1,23 @@
 $(document).ready(function(){
-
-  $('#cover-image').on('change', function(ev) {
-    var f = ev.target.files[0];
-    var fr = new FileReader();
-    fr.onload = function(ev2) {
-      $('.time-cover-image').css('background-image' , 'url(' + ev2.target.result + ')');
-    };
-    fr.readAsDataURL(f);
+  $('#cover-image').on('change', function(e) {
+    console.log('change');
+    loadImage(
+        e.target.files[0],
+        function (img) {
+          console.log(img);
+          path = $(img).attr('src');
+          $('.time-cover-image').css('background-image' , 'url(' + path + ')');
+        },
+    );
   });
+  // $('#cover-image').on('change', function(ev) {
+  //   var f = ev.target.files[0];
+  //   var fr = new FileReader();
+  //   fr.onload = function(ev2) {
+  //     $('.time-cover-image').css('background-image' , 'url(' + ev2.target.result + ')');
+  //   };
+  //   fr.readAsDataURL(f);
+  // });
 
   $('body').keypress(function (e) {
     var key = e.which;
@@ -62,11 +72,12 @@ function Save(){
     useCORS: true,
 
     onrendered: function(canvas) {
-      // document.body.appendChild(canvas);
-      $('.modal-body img').remove();
 
-      var img = canvas.toDataURL("image/png");
-      $('.modal-body').append('<img src="'+img+'"/>');
+      // $('.modal-body img').remove();
+      $('.modal-body canvas').remove();
+      // var img = canvas.toDataURL("image/png");
+      // $('.modal-body').append('<img src="'+img+'"/>');
+      $('.modal-body').append(canvas);
       $("html, body").animate({ scrollTop: 60 }, "250");
       $('#myModal').modal('show')
 
