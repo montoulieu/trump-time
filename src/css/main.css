@@ -89,10 +89,15 @@ body {
 .custom-file {
   width: 100%;
 }
-.btn-darken {
-  background-color: black;
-  color: white;
+.form-group {
+  position: relative;
 }
+  .search-clear {
+
+      font-size: 20px!important;
+      cursor: pointer;
+      color: white;
+  }
 .modal canvas {
   width: 100%!important;
   height: auto!important;

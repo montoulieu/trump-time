@@ -34,6 +34,12 @@ $(document).ready(function(){
   $('#darken-disable').click(function(e){
     $('.time-cover-image').removeClass('darkened');
   });
+  $(".search-clear").click(function(){
+    console.log('CLearing');
+    $(this).prev().val('');
+    $(this).prev().attr('value','');
+  });
+
 });
 
 // Transfers text from input fields to magazine layout
@@ -53,6 +59,7 @@ function Save(){
   html2canvas($('.magazine-cover'), {
     dpi: 401,
     allowTaint: true,
+    useCORS: true,
 
     onrendered: function(canvas) {
       // document.body.appendChild(canvas);
