@@ -114,7 +114,7 @@ var trumpCovers = [
   ],
   [
     'russia-1',
-    'http://pixelglitch.net/wp-content/uploads/2017/07/trump-russia.jpg',
+    'images/russia-1.jpg',
     [
       ['top'        , 'Кисляк любит золотые ливни так же, как Трамп'],
       ['left-large' , 'Мудак' ],
@@ -126,7 +126,7 @@ var trumpCovers = [
   ],
   [
     'russia-2',
-    'http://pixelglitch.net/wp-content/uploads/2017/07/trumprussia_feat-e1499039554343.jpg',
+    'images/russia-2.jpg',
     [
       ['top'        , 'Товарищ козырь - лучший'],
       ['left-large' , 'большие руки' ],
@@ -138,7 +138,7 @@ var trumpCovers = [
   ],
   [
     'graffiti',
-    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpGraffiti.jpg',
+    'images/graffiti.jpg',
     [
       ['top'        , 'The Foreign Lover You Heard About But Ignored...'],
       ['left-large' , 'In Bed Together?' ],
