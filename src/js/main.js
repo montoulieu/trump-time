@@ -34,6 +34,12 @@ $(document).ready(function(){
   $('#darken-disable').click(function(e){
     $('.time-cover-image').removeClass('darkened');
   });
+  $(".search-clear").click(function(){
+    console.log('Clearing');
+    $(this).prev().val('');
+    $(this).prev().attr('value','');
+  });
+
 });
 
 // Transfers text from input fields to magazine layout
@@ -44,7 +50,7 @@ function Generate(){
     $('.time-text.' + id).text(text);
     $(this).attr('value',text);
   });
-  $("html, body").animate({ scrollTop: 0 }, "slow");
+  $("html, body").animate({ scrollTop: 60 }, "250");
 }
 
 // Creates magazine image and pops results in modal window
@@ -53,12 +59,15 @@ function Save(){
   html2canvas($('.magazine-cover'), {
     dpi: 401,
     allowTaint: true,
+    useCORS: true,
 
     onrendered: function(canvas) {
       // document.body.appendChild(canvas);
       $('.modal-body canvas').remove();
       $('.modal-body').append(canvas);
+      $("html, body").animate({ scrollTop: 60 }, "250");
       $('#myModal').modal('show')
+
     }
   });
 
@@ -76,10 +85,10 @@ function Random(){
   $('input.form-control').each(function(index){
     id   = $(this).attr('id');
     text = $('.time-text.' + id).text();
-    $(this).text(text);
+    $(this).val(text);
     $(this).attr('value',text);
   });
-
+  $("html, body").animate({ scrollTop: 60 }, "250");
 }
 
 function getRandomIntInclusive(min, max) {
