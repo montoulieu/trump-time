@@ -50,7 +50,7 @@ function Generate(){
     $('.time-text.' + id).text(text);
     $(this).attr('value',text);
   });
-  $("html, body").animate({ scrollTop: 0 }, "slow");
+  $("html, body").animate({ scrollTop: 60 }, "250");
 }
 
 // Creates magazine image and pops results in modal window
@@ -65,7 +65,9 @@ function Save(){
       // document.body.appendChild(canvas);
       $('.modal-body canvas').remove();
       $('.modal-body').append(canvas);
+      $("html, body").animate({ scrollTop: 60 }, "250");
       $('#myModal').modal('show')
+
     }
   });
 
@@ -86,7 +88,7 @@ function Random(){
     $(this).val(text);
     $(this).attr('value',text);
   });
-
+  $("html, body").animate({ scrollTop: 60 }, "250");
 }
 
 function getRandomIntInclusive(min, max) {
