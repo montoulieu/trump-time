@@ -80,16 +80,24 @@ body {
   z-index: 0;
   background-size: cover;
   background-position: center;
+  opacity: 1;
   transition: all .25s ease-in-out;
+}
+.time-cover-image.darkened{
+  opacity: .75;
 }
 .custom-file {
   width: 100%;
 }
-
+.btn-darken {
+  background-color: black;
+  color: white;
+}
 .modal canvas {
   width: 100%!important;
   height: auto!important;
 }
+
 @media (max-width: 540px){
 
   .magazine-cover {

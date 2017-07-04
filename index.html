@@ -40,7 +40,7 @@
       <div class="col-lg-8 window">
         <div class="magazine-cover">
           <div class="time-header"></div>
-          <div class="time-cover-image"></div>
+          <div class="time-cover-image darkened"></div>
           <h5 class="time-text top">Trump is hitting on all fronts... Even TV!</h5>
           <h1 class="time-text left-large text-golden-shower text-uppercase display-4">DONALD TRUMP</h1>
           <h3 class="time-text left-medium">The "Apprentice" is a television smash!</h3>
@@ -58,10 +58,23 @@
             <button type="submit" class="btn btn-success btn-save" data-toggle="modal" data-target="#saveModal"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
           </div>
           <div class="form-group">
-            <label for="top">Cover Image</label>
+            <label for="cover-image">Cover Image</label>
             <label class="custom-file">
               <input type="file" id="cover-image" class="custom-file-input">
               <span class="custom-file-control"></span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="darken-image" class="pr-3">Darken Image?</label>
+            <label class="custom-control custom-radio">
+              <input id="darken-enable" name="radio" type="radio" checked="" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Enable</span>
+            </label>
+            <label class="custom-control custom-radio">
+              <input id="darken-disable" name="radio" type="radio" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Disable</span>
             </label>
           </div>
           <div class="form-group">

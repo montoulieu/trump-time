@@ -28,7 +28,12 @@ $(document).ready(function(){
     e.preventDefault();
     Random();
   });
-
+  $('#darken-enable').click(function(e){
+    $('.time-cover-image').addClass('darkened');
+  });
+  $('#darken-disable').click(function(e){
+    $('.time-cover-image').removeClass('darkened');
+  });
 });
 
 // Transfers text from input fields to magazine layout
@@ -56,6 +61,7 @@ function Save(){
       $('#myModal').modal('show')
     }
   });
+
 }
 
 // Selects random magazine covers
