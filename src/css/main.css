@@ -82,7 +82,15 @@ body {
   background-position: center;
   opacity: 1;
   transition: all .25s ease-in-out;
+  overflow: hidden;
 }
+  .time-cover-image canvas,
+  .time-cover-image img {
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+    z-index: 10;
+    width: 100%!important;
+  }
 .overlay {
   opacity: 0;
   background-color: black;
@@ -119,6 +127,10 @@ body {
     width: 320px;
     height: 420px;
     border-width: 5px;
+  }
+  .time-cover-image {
+    width: 310px;
+    height: 410px;
   }
     .top.time-text { font-size: .7rem; }
     h1.time-text   { font-size: 2rem; }

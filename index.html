@@ -48,7 +48,9 @@
           <h5 class="time-text right-2">How Stressed Is Your Bank? A Checkup</h5>
           <h5 class="time-text right-3 text-russian-red">Global Warming: A New Age of Extinction</h5>
           <div class="overlay"></div>
-          <div class="time-cover-image"></div>
+          <div class="time-cover-image">
+            <canvas id="cover-image" width="480" height="650">
+          </div>
         </div>
       </div>
       <div class="col-md-8 offset-md-2 col-lg-5 offset-lg-0 panel pt-5 pt-lg-0">
@@ -60,10 +62,12 @@
             <button type="submit" class="btn btn-success btn-save" data-toggle="modal" data-target="#saveModal"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
           </div>
           <div class="form-group">
-            <label for="cover-image">Cover Image</label>
+            <label for="cover-image-input">Cover Image</label>
             <label class="custom-file">
-              <input type="file" id="cover-image" class="custom-file-input">
-              <span class="custom-file-control"></span>
+              <input type="file" id="cover-image-input" class="custom-file-input">
+              <span class="custom-file-control">
+
+              </span>
             </label>
           </div>
           <div class="form-group">

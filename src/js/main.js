@@ -1,13 +1,23 @@
+
 $(document).ready(function(){
-  $('#cover-image').on('change', function(e) {
+  $('#cover-image-input').on('change', function(e) {
     console.log('change');
     loadImage(
         e.target.files[0],
         function (img) {
           console.log(img);
-          path = $(img).attr('src');
-          $('.time-cover-image').css('background-image' , 'url(' + path + ')');
+          $('#cover-image').remove();
+          $('.magazine-cover .time-cover-image').append(img);
+          $('.magazine-cover .time-cover-image canvas').attr('id','cover-image');
         },
+        {
+          maxWidth: 480,
+          maxHeight: 650,
+          crop: true,
+          cover: true,
+          meta: true,
+          orientation: true,
+        }
     );
   });
   // $('#cover-image').on('change', function(ev) {
@@ -20,6 +30,7 @@ $(document).ready(function(){
   // });
 
   $('body').keypress(function (e) {
+    var key = e.which;
     var key = e.which;
     if( key == 13 ){
       Generate();
@@ -67,19 +78,19 @@ function Generate(){
 function Save(){
 
   html2canvas($('.magazine-cover'), {
-    dpi: 401,
+    dpi: 326,
     allowTaint: true,
     useCORS: true,
 
     onrendered: function(canvas) {
 
-      // $('.modal-body img').remove();
-      $('.modal-body canvas').remove();
-      // var img = canvas.toDataURL("image/png");
-      // $('.modal-body').append('<img src="'+img+'"/>');
-      $('.modal-body').append(canvas);
+      $('.modal-body img').remove();
+      // $('.modal-body canvas').remove();
+      var img = canvas.toDataURL("image/png");
+      $('.modal-body').append('<img src="'+img+'"/>');
+      // $('.modal-body').append(canvas);
       $("html, body").animate({ scrollTop: 60 }, "250");
-      $('#myModal').modal('show')
+      $('#myModal').modal('show');
 
     }
   });
@@ -88,8 +99,17 @@ function Save(){
 
 // Selects random magazine covers
 function Random(){
+  var canvas = document.getElementById('cover-image');
+  var context = canvas.getContext('2d');
+  var imageObj = new Image();
+
+
   coverSelection = getRandomIntInclusive(0,trumpCovers.length - 1);
-  $('.time-cover-image').css('background-image', 'url(' + trumpCovers[coverSelection][1] + ')');
+  imageObj.onload = function() {
+    drawImageProp(context, imageObj, 0,0,480, 650,-240,0);
+  };
+  imageObj.src = trumpCovers[coverSelection][1];
+  // $('.time-cover-image img').attr('src', trumpCovers[coverSelection][1] );
   trumpCovers[coverSelection][2].forEach(function(entry){
     $('.time-text.' + entry[0]).text(entry[1]);
 
@@ -103,7 +123,53 @@ function Random(){
   });
   $("html, body").animate({ scrollTop: 60 }, "250");
 }
+function drawImageProp(ctx, img, x, y, w, h, offsetX, offsetY) {
 
+    if (arguments.length === 2) {
+        x = y = 0;
+        w = ctx.canvas.width;
+        h = ctx.canvas.height;
+    }
+
+    // default offset is center
+    offsetX = typeof offsetX === "number" ? offsetX : 0.5;
+    offsetY = typeof offsetY === "number" ? offsetY : 0.5;
+
+    // keep bounds [0.0, 1.0]
+    if (offsetX < 0) offsetX = 0;
+    if (offsetY < 0) offsetY = 0;
+    if (offsetX > 1) offsetX = 1;
+    if (offsetY > 1) offsetY = 1;
+
+    var iw = img.width,
+        ih = img.height,
+        r = Math.min(w / iw, h / ih),
+        nw = iw * r,   // new prop. width
+        nh = ih * r,   // new prop. height
+        cx, cy, cw, ch, ar = 1;
+
+    // decide which gap to fill
+    if (nw < w) ar = w / nw;
+    if (Math.abs(ar - 1) < 1e-14 && nh < h) ar = h / nh;  // updated
+    nw *= ar;
+    nh *= ar;
+
+    // calc source rectangle
+    cw = iw / (nw / w);
+    ch = ih / (nh / h);
+
+    cx = (iw - cw) * offsetX;
+    cy = (ih - ch) * offsetY;
+
+    // make sure source rectangle is valid
+    if (cx < 0) cx = 0;
+    if (cy < 0) cy = 0;
+    if (cw > iw) cw = iw;
+    if (ch > ih) ch = ih;
+
+    // fill image in dest. rectangle
+    ctx.drawImage(img, cx, cy, cw, ch,  x, y, w, h);
+}
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
