@@ -101,12 +101,12 @@ var trumpCovers = [
     'russia-1',
     'http://pixelglitch.net/wp-content/uploads/2017/07/trump-russia.jpg',
     [
-      ['top'        , 'Товарищ козырь - лучший'],
-      ['left-large' , 'большие руки' ],
-      ['left-medium', 'Но еще больший пенис' ],
-      ['right-1'    , 'Впитывание в мочу легко, когда вы являетесь этим богатым' ],
-      ['right-2'    , 'большие руки' ],
-      ['right-3'    , 'большие руки' ],
+      ['top'        , 'Кисляк любит золотые ливни так же, как Трамп'],
+      ['left-large' , 'Давайте веселиться!' ],
+      ['left-medium', 'Кто-то сказал, что оукс и кокаин?' ],
+      ['right-1'    , 'Ты даже не знаешь, что Трамп трахает тебя в задницу' ],
+      ['right-2'    , 'Просто президентский материал ...' ],
+      ['right-3'    , 'Эти двойные подбородки хорошо работают вместе' ],
     ]
   ],
   [
@@ -117,8 +117,8 @@ var trumpCovers = [
       ['left-large' , 'большие руки' ],
       ['left-medium', 'Но еще больший пенис' ],
       ['right-1'    , 'Впитывание в мочу легко, когда вы являетесь этим богатым' ],
-      ['right-2'    , 'большие руки' ],
-      ['right-3'    , 'большие руки' ],
+      ['right-2'    , 'Ты собираешься заработать мне много денег, верно?' ],
+      ['right-3'    , 'Наш президент, проститутка' ],
     ]
   ],
   [
@@ -149,12 +149,12 @@ var trumpCovers = [
     'trump-chin',
     'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpChin.jpg',
     [
-      ['top'        , 'The Single Most Influential Man In The History of Mankind' ],
-      ['left-large' , 'Believe Me, It\'s Gonna Be Great' ],
-      ['left-medium', 'The Biggest Shit America Took' ],
-      ['right-1'    , 'A Closer Look at the Skidmarks Left Behind' ],
-      ['right-2'    , 'We Thought it was Just a Fart, Now it\'s Much More than a Shart' ],
-      ['right-3'    , '"Never a worse blowout since Taco Bell and PBR" - Michael Moore' ],
+      ['top'        , 'The Most Influential Man In The History of Mankind' ],
+      ['left-large' , 'Believe Me' ],
+      ['left-medium', 'It\'s Gonna Be Great' ],
+      ['right-1'    , '"He Can Do No Wrong" - Sean Spicer' ],
+      ['right-2'    , 'Global Warming - A Facade' ],
+      ['right-3'    , '"The Most Electoral Votes for a Republican Since Reagan" - Truth' ],
     ]
   ],
   // ['prick','http://i.onionstatic.com/avclub/6364/23/16x9/960.jpg'],
