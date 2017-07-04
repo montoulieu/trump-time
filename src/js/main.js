@@ -76,14 +76,11 @@ function Generate(){
 
 // Creates magazine image and pops results in modal window
 function Save(){
-
   html2canvas($('.magazine-cover'), {
     dpi: 326,
     allowTaint: true,
     useCORS: true,
-
     onrendered: function(canvas) {
-
       $('.modal-body img').remove();
       // $('.modal-body canvas').remove();
       var img = canvas.toDataURL("image/png");
@@ -91,10 +88,8 @@ function Save(){
       // $('.modal-body').append(canvas);
       $("html, body").animate({ scrollTop: 60 }, "250");
       $('#myModal').modal('show');
-
     }
   });
-
 }
 
 // Selects random magazine covers
@@ -102,19 +97,17 @@ function Random(){
   var canvas = document.getElementById('cover-image');
   var context = canvas.getContext('2d');
   var imageObj = new Image();
+  var coverSelection = getRandomIntInclusive(0,trumpCovers.length - 1);
 
-
-  coverSelection = getRandomIntInclusive(0,trumpCovers.length - 1);
   imageObj.onload = function() {
     drawImageProp(context, imageObj, 0,0,480, 650,.5,.5);
   };
   imageObj.src = trumpCovers[coverSelection][1];
-  // $('.time-cover-image img').attr('src', trumpCovers[coverSelection][1] );
+
   trumpCovers[coverSelection][2].forEach(function(entry){
     $('.time-text.' + entry[0]).text(entry[1]);
-
   });
-  // console.log(trumpCovers[coverSelection][0]);
+
   $('input.form-control').each(function(index){
     id   = $(this).attr('id');
     text = $('.time-text.' + id).text();
