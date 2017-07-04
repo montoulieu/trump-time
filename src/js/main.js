@@ -64,6 +64,7 @@ function Random(){
     $('.time-text.' + entry[0]).text(entry[1]);
 
   });
+  console.log(trumpCovers[coverSelection][0]);
   $('input.form-control').each(function(index){
     id   = $(this).attr('id');
     text = $('.time-text.' + id).text();
