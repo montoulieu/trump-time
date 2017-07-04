@@ -30,7 +30,7 @@
   </script>
 </head>
 <body class="bg-inverse text-white">
-  <header>
+  <header class="f-stack-serif">
     <nav class="navbar navbar-inverse bg-russian-red text-center">
       <h1 class=" mb-0 text-uppercase text-white font-weight-bold">Trump Time</h1>
     </nav>
@@ -51,6 +51,12 @@
       </div>
       <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0 panel pt-5 pt-lg-0">
         <form>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-danger btn-generate"><i class="fa fa-refresh" aria-hidden="true"></i> Generate</button>
+            <button type="submit" class="btn btn-warning btn-random "><i class="fa fa-random" aria-hidden="true"></i> Random</button>
+            <button type="submit" class="btn btn-success btn-save" data-toggle="modal" data-target="#saveModal"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+          </div>
           <div class="form-group">
             <label for="top">Cover Image</label>
             <label class="custom-file">
@@ -78,13 +84,10 @@
             <label for="right-2">Right - 2nd Headline</label>
             <input type="text" class="form-control" id="right-2" value="How Stressed Is Your Bank? A Checkup">
           </div>
-          <div class="form-group pb-4">
+          <div class="form-group">
             <label for="right-3">Right - 3rd Headline</label>
             <input type="text" class="form-control" id="right-3" value="Global Warming: A New Age of Extinction">
           </div>
-          <button type="submit" class="btn btn-danger btn-generate">Generate</button>
-          <button type="submit" class="btn btn-green btn-save" data-toggle="modal" data-target="#saveModal">Save</button>
-          <button type="submit" class="btn btn-warning btn-random float-right">Random</button>
         </form>
       </div>
     </div>
@@ -93,8 +96,8 @@
         <div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="saveModalTitle" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content bg-inverse">
-              <div class="modal-header">
-                <h5 class="modal-title" id="saveModalTitle">Your Trump Image</h5>
+              <div class="modal-header text-center f-stack-serif">
+                <h5 class="modal-title text-uppercase" id="saveModalTitle">Your Trump Image</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>

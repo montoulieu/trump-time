@@ -46,7 +46,11 @@ function Generate(){
 function Save(){
 
   html2canvas($('.magazine-cover'), {
+    dpi: 401,
+    useCORS: true,
     allowTaint: true,
+    letterRendering: true,
+
     onrendered: function(canvas) {
       // document.body.appendChild(canvas);
       $('.modal-body canvas').remove();
