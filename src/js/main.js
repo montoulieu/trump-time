@@ -58,12 +58,14 @@ function Save(){
 
 // Selects random magazine covers
 function Random(){
+
   coverSelection = getRandomIntInclusive(0,trumpCovers.length - 1);
   $('.time-cover-image').css('background-image', 'url(' + trumpCovers[coverSelection][1] + ')');
   trumpCovers[coverSelection][2].forEach(function(entry){
     $('.time-text.' + entry[0]).text(entry[1]);
 
   });
+  console.log(trumpCovers[coverSelection[0]]);
   $('input.form-control').each(function(index){
     id   = $(this).attr('id');
     text = $('.time-text.' + id).text();
