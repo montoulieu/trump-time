@@ -83,7 +83,7 @@ function Random(){
     $('.time-text.' + entry[0]).text(entry[1]);
 
   });
-  console.log(trumpCovers[coverSelection][0]);
+  // console.log(trumpCovers[coverSelection][0]);
   $('input.form-control').each(function(index){
     id   = $(this).attr('id');
     text = $('.time-text.' + id).text();
@@ -102,7 +102,7 @@ function getRandomIntInclusive(min, max) {
 var trumpCovers = [
   [
     'weener',
-    'http://pixelglitch.net/wp-content/uploads/2017/07/trump-hotdog.jpg',
+    'images/weener.jpg',
     [
       ['top'        , 'The Donald can\'t stop eating weeners!'],
       ['left-large' , 'Weener Feast' ],
@@ -150,7 +150,7 @@ var trumpCovers = [
   ],
   [
     'trump-dump',
-    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpDump-1.jpg',
+    'images/trump-dump.jpg',
     [
       ['top'        , 'The Smell That Made It\'s Way To Your Doorstep...' ],
       ['left-large' , 'Trump\'s Turtle Head' ],
@@ -162,7 +162,7 @@ var trumpCovers = [
   ],
   [
     'trump-chin',
-    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpChin-1.jpg',
+    'images/trump-chin.jpg',
     [
       ['top'        , 'The Most Influential Man In The History of Mankind' ],
       ['left-large' , 'Believe Me' ],
