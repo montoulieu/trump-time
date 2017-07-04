@@ -76,15 +76,23 @@ body {
   background-color: black;
   position: absolute;
   top: 0; right: 0; left: 0; bottom: 0;
-  background-image: url('http://assets.nydailynews.com/polopoly_fs/1.2731579.1469831692!/img/httpImage/image.jpg_gen/derivatives/article_750/583802826.jpg');
+  background-image: url('../../images/default.jpg');
   z-index: 0;
   background-size: cover;
   background-position: center;
   opacity: 1;
   transition: all .25s ease-in-out;
 }
-.time-cover-image.darkened{
-  opacity: .75;
+.overlay {
+  opacity: 0;
+  background-color: black;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 100;
+  transition: all .25s ease-in-out;
+}
+.darkened .overlay{
+  opacity: .25;
 }
 .custom-file {
   width: 100%;
@@ -98,7 +106,7 @@ body {
       cursor: pointer;
       color: white;
   }
-.modal canvas {
+.modal img {
   width: 100%!important;
   height: auto!important;
 }

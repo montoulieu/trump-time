@@ -29,10 +29,10 @@ $(document).ready(function(){
     Random();
   });
   $('#darken-enable').click(function(e){
-    $('.time-cover-image').addClass('darkened');
+    $('.magazine-cover').addClass('darkened');
   });
   $('#darken-disable').click(function(e){
-    $('.time-cover-image').removeClass('darkened');
+    $('.magazine-cover').removeClass('darkened');
   });
   $(".search-clear").click(function(){
     console.log('Clearing');
@@ -63,8 +63,10 @@ function Save(){
 
     onrendered: function(canvas) {
       // document.body.appendChild(canvas);
-      $('.modal-body canvas').remove();
-      $('.modal-body').append(canvas);
+      $('.modal-body img').remove();
+
+      var img = canvas.toDataURL("image/png");
+      $('.modal-body').append('<img src="'+img+'"/>');
       $("html, body").animate({ scrollTop: 60 }, "250");
       $('#myModal').modal('show')
 
