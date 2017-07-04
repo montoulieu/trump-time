@@ -106,7 +106,7 @@ function Random(){
 
   coverSelection = getRandomIntInclusive(0,trumpCovers.length - 1);
   imageObj.onload = function() {
-    drawImageProp(context, imageObj, 0,0,480, 650,-240,0);
+    drawImageProp(context, imageObj, 0,0,480, 650,.5,.5);
   };
   imageObj.src = trumpCovers[coverSelection][1];
   // $('.time-cover-image img').attr('src', trumpCovers[coverSelection][1] );
