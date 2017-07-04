@@ -58,14 +58,12 @@ function Save(){
 
 // Selects random magazine covers
 function Random(){
-
   coverSelection = getRandomIntInclusive(0,trumpCovers.length - 1);
   $('.time-cover-image').css('background-image', 'url(' + trumpCovers[coverSelection][1] + ')');
   trumpCovers[coverSelection][2].forEach(function(entry){
     $('.time-text.' + entry[0]).text(entry[1]);
 
   });
-  console.log(trumpCovers[coverSelection[0]]);
   $('input.form-control').each(function(index){
     id   = $(this).attr('id');
     text = $('.time-text.' + id).text();
@@ -137,9 +135,9 @@ var trumpCovers = [
       ['top'        , 'The Smell That Made It\'s Way To Your Doorstep...' ],
       ['left-large' , 'Trump\'s Turtle Head' ],
       ['left-medium', 'The Biggest Shit America Took' ],
-      ['right-1'    , 'The Aftermath of the Bomb' ],
-      ['right-2'    , 'A Closer Look at the Skidmarks Left Behind' ],
-      ['right-3'    , '"Never a worse blowout since taco bell and PBR" - Michael Moore' ],
+      ['right-1'    , 'A Closer Look at the Skidmarks Left Behind' ],
+      ['right-2'    , 'We Thought it was Just a Fart, Now it\'s Much More than a Shart' ],
+      ['right-3'    , '"Never a worse blowout since Taco Bell and PBR" - Michael Moore' ],
     ]
   ],
   // ['prick','http://i.onionstatic.com/avclub/6364/23/16x9/960.jpg'],
