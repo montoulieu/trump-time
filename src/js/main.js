@@ -123,6 +123,18 @@ var trumpCovers = [
       ['right-3'    , 'How Trump\'s Secret Love Relationship Could Creep Into the White House' ],
     ]
   ],
+  [
+    'trump-dump',
+    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpDump.jpg',
+    [
+      ['top'        , 'The Smell That Made It\'s Way To Your Doorstep...' ],
+      ['left-large' , 'Trump\'s Turtle Head' ],
+      ['left-medium', 'The Biggest Shit America Took' ],
+      ['right-1'    , 'The Aftermath of the Bomb' ],
+      ['right-2'    , 'A Closer Look at the Skidmarks Left Behind' ],
+      ['right-3'    , '"Never a worse blowout since taco bell and PBR" - Michael Moore' ],
+    ]
+  ],
   // ['prick','http://i.onionstatic.com/avclub/6364/23/16x9/960.jpg'],
   // ['creep','https://s-media-cache-ak0.pinimg.com/originals/a9/95/99/a995991386bc33ad3e12569753671553.jpg'],
   // ['wrestling','http://image.al.com/home/bama-media/width620/img/opinion/photo/21532329-mmmain.jpg'],
