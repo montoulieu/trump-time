@@ -86,7 +86,7 @@ var trumpCovers = [
     'http://pixelglitch.net/wp-content/uploads/2017/07/trump-hotdog.jpg',
     [
       ['top'        , 'The Donald can\'t stop eating weeners!'],
-      ['left-large' , 'weener feast' ],
+      ['left-large' , 'Weener Feast' ],
       ['left-medium', 'Will he ever stop?' ],
       ['right-1'    , 'Surgeons are devising a plan to remove the lodged weeners ' ],
       ['right-2'    , 'Osker Myers shares are through the roof' ],
@@ -135,6 +135,18 @@ var trumpCovers = [
     [
       ['top'        , 'The Smell That Made It\'s Way To Your Doorstep...' ],
       ['left-large' , 'Trump\'s Turtle Head' ],
+      ['left-medium', 'The Biggest Shit America Took' ],
+      ['right-1'    , 'A Closer Look at the Skidmarks Left Behind' ],
+      ['right-2'    , 'We Thought it was Just a Fart, Now it\'s Much More than a Shart' ],
+      ['right-3'    , '"Never a worse blowout since Taco Bell and PBR" - Michael Moore' ],
+    ]
+  ],
+  [
+    'trump-chin',
+    'http://pixelglitch.net/wp-content/uploads/2017/07/TrumpChin.jpg',
+    [
+      ['top'        , 'The Single Most Influential Man In The History of Mankind' ],
+      ['left-large' , 'Believe Me, It\'s Gonna Be Great' ],
       ['left-medium', 'The Biggest Shit America Took' ],
       ['right-1'    , 'A Closer Look at the Skidmarks Left Behind' ],
       ['right-2'    , 'We Thought it was Just a Fart, Now it\'s Much More than a Shart' ],
